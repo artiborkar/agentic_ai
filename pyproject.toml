@@ -1,0 +1,20 @@
+[project]
+name = "agentic_ai"
+version = "0.1.0"
+description = "This is my first agentic AI project"
+readme = "README.md"
+authors = [
+    { name = "artiborkar", email = "borkararti207@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "langchain>=1.4.2",
+    "langgraph>=1.2.11",
+]
+
+[project.scripts]
+agentic-ai = "agentic_ai:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
